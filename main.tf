@@ -30,7 +30,7 @@ resource "google_storage_bucket_iam_binding" "example_binding"{
   bucket = google_storage_bucket.mybucket.name
   role = "roles/storage.objectUser"
 
-  members =["udaysidhu012@gmail.com"]
+  members =["user:udaysidhu012@gmail.com"]
 }
 
 output "bucket_name"{

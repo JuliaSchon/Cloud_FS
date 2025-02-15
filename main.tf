@@ -16,6 +16,14 @@ resource "google_storage_bucket" "mybucket" {
   name = "my-terraform-bucket-cloud-computing009988812"
   location = "us-west1"
 
+    versioning{
+    enabled = true
+  }
+
+  labels = {
+    environment = "student-lab"
+    managed_by = "terraform"
+  }
 }
 
 output "bucket_name"{
